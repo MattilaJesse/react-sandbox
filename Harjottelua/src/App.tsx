@@ -1,13 +1,14 @@
-import { TeamCard } from './components/Teamcard';
+import ProductCatalog from './components/ProductCatalog';
+// import TeamCard from './components/TeamCard'; // Jos haluat pitää vanhat tallessa
 
-export default function App() {
+function App() {
   return (
-    <div className="min-h-screen bg-slate-100 p-8 flex gap-4 justify-center items-start">
-      
-      <TeamCard name="Matti meikäläinen" role="Elämästä naatiskelia" />
-      <TeamCard name="Sokka kissa" role="Maukuu paljon" />
-      <TeamCard name="Emäntä" role="Valittaaa (vitsi)" />
-
+    <div className="min-h-screen bg-gray-100 py-10">
+      {/* Voit jättää TeamCardit tähän jos haluat, 
+          mutta uusi tehtävä vaatii ProductCatalogin: */}
+      <ProductCatalog />
     </div>
   );
 }
+
+export default App;
